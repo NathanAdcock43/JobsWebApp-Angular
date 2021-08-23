@@ -1,5 +1,7 @@
+
+// the data structure of a Job object first defined in the backend model
 export class Job {
-    id:string;
+    id: string;
     jobName: string;
-    jobDescription:string;
+    jobStatus: string;
 }

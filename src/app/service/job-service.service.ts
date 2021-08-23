@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Job } from '../model/job';
 
+//Mirrored the Services in the backend
 @Injectable({
   providedIn: 'root'
 })

@@ -5,18 +5,18 @@ import { JobServiceService } from '../service/job-service.service';
 @Component({
   selector: 'app-job-list',
   templateUrl: './job-list.component.html',
-  styleUrls: ['./job-list.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class JobListComponent implements OnInit {
 
   jobs: Job[];
 
-  constructor(private jobService: JobServiceService) { 
+  constructor(private jobService: JobServiceService) {
 
   }
 
   ngOnInit(): void {
-    this.jobService.findAll().subscribe(data =>{
+    this.jobService.findAll().subscribe(data => {
       this.jobs = data;
     });
   }
